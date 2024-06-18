@@ -3,11 +3,9 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\ClienteModel;
 class Login extends Controller{
-
     public function create(){
 
         $request = \Config\Services::request();
-        $validation = \Config\Services::validation();
         $headers = $request->getHeaders();
         $model = new ClienteModel();
         $registro = $model -> where('clie_estado', 1) -> getCliente();
@@ -42,6 +40,4 @@ class Login extends Controller{
         }
         return json_encode($data, true);
     }
-    
-
 }

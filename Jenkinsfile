@@ -16,9 +16,11 @@ pipeline {
             }
         }
 
-        stage('Ejecutar php'){
+        stage('Unit Test php'){
             steps {
-                sh 'php index.php'
+                //sh 'chmod 0775 vendor/bin/phpunit'
+                sh 'chmod +x vendor/bin/phpunit'
+                sh 'vendor/bin/phpunit'
             }
         }
          //Revisa la calidad de código con SonarQube
@@ -33,5 +35,16 @@ pipeline {
               //  }
            // }
        // }
+       /*stage('Docker Build') {
+            steps {
+                sh 'docker build -t pancapp-backend .'
+            }
+        }
+
+         stage('Deploy php') {
+            steps {
+                sh 'docker compose up -d'
+            }
+        }*/
     }
 }
