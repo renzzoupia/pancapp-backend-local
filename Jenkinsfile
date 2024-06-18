@@ -5,7 +5,7 @@ pipeline {
         
         stage('Preparacion'){
             steps {
-                git branch:'main',url:'https://github.com/renzzoupia/pancapp-backend-local.gitt'
+                git branch:'main',url:'https://github.com/renzzoupia/pancapp-backend-local.git'
    	       		echo 'Pulled from github successfully'
             }
         }
