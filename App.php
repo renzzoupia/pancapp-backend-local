@@ -17,7 +17,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'http://localhost/pancapp-backend/';
+    public string $baseURL = 'http://ec2-54-198-6-80.compute-1.amazonaws.com/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
