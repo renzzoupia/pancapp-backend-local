@@ -35,7 +35,7 @@ pipeline {
               //  }
            // }
        // }
-       /*stage('Docker Build') {
+       stage('Docker Build') {
             steps {
                 sh 'docker build -t pancapp-backend .'
             }
@@ -45,6 +45,6 @@ pipeline {
             steps {
                 sh 'docker compose up -d'
             }
-        }*/
+        }
     }
 }
