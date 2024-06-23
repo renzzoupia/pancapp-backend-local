@@ -138,7 +138,7 @@ class Producto extends Controller{
                                     "prod_descripcion" => $datos["prod_descripcion"],
                                     "prod_stock" => $datos["prod_stock"],
                                     "prod_precio" => $datos["prod_precio"],
-                                    "prod_foto" => "http://localhost/public/Productos/".$newName
+                                    "prod_foto" => "http://ec2-54-221-1-131.compute-1.amazonaws.com/public/Productos/".$newName
                                 );
                                 $model = new ProductoModel();
                                 $prod_id = $model -> insert($datos);
