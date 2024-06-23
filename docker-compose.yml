@@ -1,7 +1,7 @@
 services:
    appphp:
     image: pancapp-backend
-    container_name: shopmarket_v1
+    container_name: pancapp-backend_v1
     #restart: always
     ports:
       - 80:80
